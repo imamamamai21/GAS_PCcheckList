@@ -135,7 +135,7 @@ function updateStokeData() {
     
     // simplitデータ取得
     var endDate = simplitSheet.getTargetData(value.rentalid.value);
-    var endValue = 'simplitデータ無し'
+    var endValue = 'simplitデータ無し';
     if (endDate) {
       endValue = endDate[simplitIndex.endDate];
       r.sheet.getRange(r.getRowKey('money') + lastRow).setValue(endDate[simplitIndex.money]);

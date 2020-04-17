@@ -15,6 +15,7 @@ function morningCheck() {
     updateWaitingReturnData();
     updateCantUseData();
     updateDiscardData();
+    updateStockListData();
     sendRemindMail_ReturnPc();
   }
   if (day === 5) botAtSummary(); // 毎週金曜日はまとめを投稿する
